@@ -1,0 +1,14 @@
+{
+  "name": "sync-notes",
+  "repo": "notablemind/sync-notes",
+  "description": "Synchronize notes",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
