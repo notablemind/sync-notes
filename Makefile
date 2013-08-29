@@ -11,9 +11,16 @@ clean:
 node_modules: package.json
 	@npm install
 
-test: build node_modules
+lintfiles := *.js *.json lib test
+
+test: lint test-only
+
+lint: node_modules
+	@./node_modules/.bin/jshint --verbose --extra-ext .js,.json $(lintfiles)
+
+test-only: build node_modules
 	@./node_modules/.bin/mocha
 
 testci: test
 
-.PHONY: clean test testci
+.PHONY: clean test testci lint test-only
