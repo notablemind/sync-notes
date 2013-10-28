@@ -4,11 +4,16 @@
   "description": "Synchronize notes",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "gorillatron/extend": "*",
+    "visionmedia/debug": "*"
+  },
   "development": {},
   "license": "MIT",
   "main": "index.js",
   "scripts": [
-    "index.js"
+    "index.js",
+    "lib/index.js",
+    "lib/utils.js"
   ]
 }
